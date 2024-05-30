@@ -1,0 +1,92 @@
+package com.techlabs.assignment;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class BookApp {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+        Random random = new Random();
+
+        System.out.print("Enter Name of player1 -> ");
+        String player1 = scanner.nextLine();
+        System.out.print("Enter Name of player2 -> ");
+        String player2 = scanner.nextLine();
+
+        
+        int player1Score = 0,player2Score = 0;
+        int player1Turns = 0, player2Turns = 0;
+       boolean Stop1 = false, Stop2= false;
+
+        System.out.println(player1 + " Starts playing ->");
+
+        while (!Stop1 || player1Turns==300 ) {
+            player1Turns++;
+            int pageNumber = random.nextInt(300) + 1;
+            int score = pageNumber % 7;
+
+            System.out.println("Turn -> " + player1Turns);
+            System.out.println("Page Number Generated -> " + pageNumber);
+            System.out.println("Score : " + score);
+            player1Score += score;
+            System.out.println("Total Score : " + player1Score);
+
+            if (pageNumber % 7 == 0 ) {
+                Stop1 = true;
+            } else {
+                System.out.print("Continue playing -> y/n -> ");
+                String continuePlaying = scanner.next();
+                if (continuePlaying.equalsIgnoreCase("n")) {
+                    Stop1 = true;
+                }
+            }
+        }
+
+        System.out.println(player1 + " Total Score: " + player1Score + " in " + player1Turns + " turns\n");
+
+        System.out.println(player2 + " Starts playing ->");
+
+        while (!Stop2 || player1Turns==300  ) {
+            player2Turns++;
+            int pageNumber = random.nextInt(300) + 1;
+            int score = pageNumber % 7;
+
+            System.out.println("Turn -> " + player2Turns);
+            System.out.println("Page Number Generated -> " + pageNumber);
+            System.out.println("Score : " + score);
+            player2Score += score;
+            System.out.println("Total Score : " + player2Score);
+
+            if (pageNumber % 7 == 0 || pageNumber == 300) {
+                Stop2 = true;
+            } else {
+                System.out.print("Continue playing -> y/n -> ");
+                String continuePlaying = scanner.next();
+                if (continuePlaying.equalsIgnoreCase("n")) {
+                   Stop2 = true;
+                }
+            }
+        }
+
+        System.out.println(player2 + " Total Score: " + player2Score + " in " + player2Turns + " turns\n");
+
+        if (player1Score > player2Score) {
+            System.out.println(player1 + " is the winner.");
+        } else if (player2Score > player1Score) {
+            System.out.println(player2 + " is the winner.");
+        } else {
+            if (player1Turns < player2Turns) {
+                System.out.println(player1 + " is the winner.");
+            } else if (player2Turns < player1Turns) {
+                System.out.println(player2 + " is the winner.");
+            } else {
+                System.out.println("The game is a draw.");
+            }
+        }
+
+        scanner.close();
+
+	}
+
+}

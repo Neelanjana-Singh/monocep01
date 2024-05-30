@@ -1,0 +1,48 @@
+package com.techlabs.model;
+
+public class Complex {
+	private double real; 
+    private double imaginary; 
+    
+    public double getReal()
+    {
+    	return real;
+    }
+
+    public Complex() {
+        this(5, 5);
+    }
+
+    public Complex(int real, int imaginary) {
+        this.real = real;
+        this.imaginary = imaginary;
+    }
+
+    public Complex(int real) {
+        this(real, 5);
+    }
+
+    public void setReal(int real) {
+        this.real = real;
+    }
+
+    public int getReal() {
+        return this.real;
+    }
+
+    public void setImaginary(int imaginary) {
+        this.imaginary = imaginary;
+    }
+
+    public int getImaginary() {
+        return this.imaginary;
+    }
+    public Complex add(Complex other) {
+        int newReal = this.real + other.real; 
+        int newImaginary = this.imaginary + other.imaginary; 
+        System.out.println("Result of addition: " + newReal + " + " + newImaginary + "i");
+		return other; 
+    }
+	
+
+}

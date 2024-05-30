@@ -1,0 +1,29 @@
+package com.techlabs.model;
+
+public class InputTest {
+
+    public static void main(String[] args) {
+        System.out.println("Username Validation:");
+        System.out.println("Valid username (testuser): " + InputValidator.validateUsername("testuser"));
+        System.out.println("Empty username: " + InputValidator.validateUsername(""));
+        System.out.println("Null username: " + InputValidator.validateUsername(null));
+        System.out.println("Username less than 3 characters: " + InputValidator.validateUsername("ab"));
+        System.out.println("Username more than 20 characters: " + InputValidator.validateUsername("verylongusernamehere"));
+
+        System.out.println("\nPassword Validation:");
+        System.out.println("Valid password (password123): " + InputValidator.validatePassword("password123"));
+        System.out.println("Empty password: " + InputValidator.validatePassword(""));
+        System.out.println("Null password: " + InputValidator.validatePassword(null));
+        System.out.println("Password less than 8 characters: " + InputValidator.validatePassword("pass"));
+        System.out.println("Password more than 30 characters: " + InputValidator.validatePassword("ThisIsAlongPasswordButStillValid"));
+
+        System.out.println("\nEmail Validation:");
+        System.out.println("Valid email (test@example.com): " + InputValidator.validateEmail("test@example.com"));
+        System.out.println("Empty email: " + InputValidator.validateEmail(""));
+        System.out.println("Null email: " + InputValidator.validateEmail(null));
+        System.out.println("Email without '@': " + InputValidator.validateEmail("userdomainext"));
+        System.out.println("Email without '.': " + InputValidator.validateEmail("user@domaine"));
+        System.out.println("Email less than 5 characters: " + InputValidator.validateEmail("a@a.c"));
+        System.out.println("Email more than 50 characters: " + InputValidator.validateEmail("verylongemailaddress@verylongexample.com"));
+
+    }

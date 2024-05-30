@@ -1,0 +1,91 @@
+package com.techlabs.model;
+
+import java.util.Scanner;
+import java.util.Random;
+
+public class Bhkk {
+    public static void main(String[] args) {
+        Bhkk pigDice = new Bhkk();
+        pigDice.playGame();
+    }
+
+    private void playGame() {
+        Scanner scanner = new Scanner(System.in);
+        Random random = new Random();
+        int totalScore = 0;
+        int turnCount = 1;
+        int total = 0;
+        System.out.println("Let's Play PIG!");
+
+        while (totalScore < 20) {
+            totalScore = takeTurn(scanner, random, totalScore, turnCount, total);
+            turnCount++;
+        }
+
+        printGameOverMessage(turnCount);
+        scanner.close();
+    }
+
+    private int takeTurn(Scanner scanner, Random random, int totalScore, int turnCount, int total) {
+        random.setSeed(System.currentTimeMillis());
+        System.out.println("TURN " + turnCount);
+        int turnScore = 0;
+        boolean turnOver = false;
+
+        while (!turnOver && totalScore < 20) {
+            System.out.print("Roll or hold? (r/h): ");
+            String choice = scanner.next();
+
+            if (choice.equals("r")) {
+                int die = rollDie(random);
+                turnScore += die;
+                totalScore += die;
+                if (die == 1) {
+                    resetScores(totalScore, total);
+                    turnOver = true;
+                    System.out.println("Turn over. No score.");
+                    return totalScore;
+                }
+                printRollResults(die, turnScore, totalScore);
+                if (totalScore >= 20) {
+                    turnOver = true;
+                }
+            } else if (choice.equals("h")) {
+                total = holdScore(totalScore, total);
+                turnOver = true;
+                return totalScore;
+            } else {
+                System.out.println("Invalid choice:");
+            }
+        }
+
+        return totalScore;
+    }
+
+    private int rollDie(Random random) {
+        return random.nextInt(6) + 1;
+    }
+
+    private void resetScores(int totalScore, int total) {
+        totalScore = 0;
+        total = 0;
+    }
+
+    private void printRollResults(int die, int turnScore, int totalScore) {
+        System.out.println("Die: " + die);
+        System.out.println("Turn score: " + turnScore);
+        System.out.println("Total score: " + totalScore);
+    }
+
+    private int holdScore(int totalScore, int total) {
+        total += totalScore;
+        System.out.println("Score for turn: " + totalScore);
+        System.out.println("Total score: " + total);
+        return total;
+    }
+
+    private void printGameOverMessage(int turnCount) {
+        System.out.println("You finished in " + (turnCount - 1) + " turns!");
+        System.out.println("Game over!");
+    }
+}

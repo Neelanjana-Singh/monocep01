@@ -1,0 +1,26 @@
+package com.techlabs.test;
+
+import com.techlabs.model.Complex;
+
+
+public class ComplexTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Complex complex1 = new Complex(10,5);
+        Complex complex2 = new Complex(10, 20);
+        Complex complex3 = new Complex(10);
+
+        System.out.println("Complex number 1: " + complex1);
+        System.out.println("Complex number 2: " + complex2);
+        System.out.println("Complex number 3: " + complex3);
+
+        Complex result1 = complex1.add(complex2);
+        Complex result2 = complex2.add(complex3);
+
+        System.out.println("\nAddition of complex1 and complex2: " + result1);
+        System.out.println("Addition of complex2 and complex3: " + result2);
+
+	}
+
+}

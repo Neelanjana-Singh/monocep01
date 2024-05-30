@@ -1,0 +1,27 @@
+package com.techlabs.test;
+
+import java.util.Scanner;
+
+import com.techlabs.model.InputValidator;
+
+public class InputValidatorTest {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Username Validation:");
+        System.out.print("Enter username: ");
+        String username = scanner.nextLine();
+        System.out.println( InputValidator.validateUsername(username));
+
+        System.out.println("\nPassword Validation:");
+        System.out.print("Enter password: ");
+        String password = scanner.nextLine();
+        System.out.println( InputValidator.validatePassword(password));
+
+        System.out.println("\nEmail Validation:");
+        System.out.print("Enter email: ");
+        String email = scanner.nextLine();
+        System.out.println(InputValidator.validateEmail(email));
+    }
+}

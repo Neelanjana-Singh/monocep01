@@ -1,0 +1,47 @@
+package com.techlabs.model;
+
+public class Account {
+    private long accountnumber;
+    private String accounttype;
+    private String name;
+    private int balance;
+
+    public Account() {
+        accountnumber = 246567889;
+        accounttype = "Saving";
+        name = "Sneha";
+        balance = 60000;
+    }
+
+    public void setAccountNumber(long accountnumber1) {
+        accountnumber = accountnumber1;
+    }
+
+    public long getAccountNumber() {
+        return accountnumber;
+    }
+
+    public void setAccountType(String accounttype1) {
+        accounttype = accounttype1;
+    }
+
+    public String getAccountType() {
+        return accounttype;
+    }
+
+    public void setName(String name1) {
+        name = name1;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setBalance(int balance1) {
+        balance = balance1;
+    }
+
+    public int getBalance() {
+        return balance;
+    }
+}

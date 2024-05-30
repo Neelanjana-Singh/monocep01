@@ -1,0 +1,30 @@
+package com.techlabs.model;
+
+public class InputValidatorTest {
+    
+    public static void main(String[] args) {
+        InputValidator validator = new InputValidator();
+        
+        // Test username validation
+        System.out.println("Username validation:");
+        System.out.println("Username 'john': " + validator.validateUsername("john"));
+        System.out.println("Username 'johndoe12345678901234': " + validator.validateUsername("johndoe12345678901234"));
+        System.out.println("Username '': " + validator.validateUsername(""));
+        System.out.println("Username null: " + validator.validateUsername(null));
+        
+        // Test password validation
+        System.out.println("\nPassword validation:");
+        System.out.println("Password 'password': " + validator.validatePassword("password"));
+        System.out.println("Password 'longpassword12345678901234567890': " + validator.validatePassword("longpassword12345678901234567890"));
+        System.out.println("Password '': " + validator.validatePassword(""));
+        System.out.println("Password null: " + validator.validatePassword(null));
+        
+        // Test email validation
+        System.out.println("\nEmail validation:");
+        System.out.println("Email 'example@example.com': " + validator.validateEmail("example@example.com"));
+        System.out.println("Email 'invalidemail.com': " + validator.validateEmail("invalidemail.com"));
+        System.out.println("Email 'toolongemailaddress1234567890123456789012345678901234567890@example.com': " + validator.validateEmail("toolongemailaddress1234567890123456789012345678901234567890@example.com"));
+        System.out.println("Email '': " + validator.validateEmail(""));
+        System.out.println("Email null: " + validator.validateEmail(null));
+    }
+}

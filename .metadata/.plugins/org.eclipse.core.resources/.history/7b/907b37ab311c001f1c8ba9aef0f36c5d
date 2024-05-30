@@ -1,0 +1,16 @@
+package com.techlabs.test;
+
+import java.util.Scanner;
+import com.techlabs.model.Account;
+import com.techlabs.model.AccountType;
+public class AccountTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner=new Scanner(System.in);
+		
+		
+
+	}
+
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.io.FileInputStream"/>
+<fullyQualifiedTypeName name="com.techlabs.models.Employee1"/>
+<fullyQualifiedTypeName name="com.techlabs.models.Rectangle"/>
+<fullyQualifiedTypeName name="com.techlabs.models.Employee2"/>
+<fullyQualifiedTypeName name="com.techlabs.models.Student2"/>
+<fullyQualifiedTypeName name="com.techlabs.models.Rectangle1"/>
+<fullyQualifiedTypeName name="com.techlabs.model.Point"/>
+<fullyQualifiedTypeName name="com.techlabs.model.Student"/>
+<fullyQualifiedTypeName name="com.techlabs.model.Employee"/>
+<fullyQualifiedTypeName name="com.techlabs.model.Rectangle"/>
+<fullyQualifiedTypeName name="com.techlabs.model.Rectangle2"/>
+<fullyQualifiedTypeName name="com.techlabs.model.Complex"/>
+<fullyQualifiedTypeName name="com.techlabs.model.Account"/>
+<fullyQualifiedTypeName name="com.techlabs.model.AccountType"/>
+<fullyQualifiedTypeName name="com.techlabs.model.InputValidator"/>
+</qualifiedTypeNameHistroy>

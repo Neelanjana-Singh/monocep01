@@ -1,0 +1,31 @@
+package com.techlabs.model;
+
+import java.util.Scanner;
+
+public class Bill {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 Scanner scan = new Scanner(System.in);
+	        System.out.println("Enter no. of units consumed :");
+	        int number = scan.nextInt();
+	        int Metre = 75;
+	        int Total = calculateBill(number, Metre);
+	        System.out.println("Total_water_bill=" + Total);
+	        scan.close();
+	    }
+
+	    public static int calculateBill(int units, int meterCharge) {
+	        int charge;
+	        if (units <= 100) {
+	            charge = units * 5;
+	        } else if (units <= 250) {
+	            charge = units * 10;
+	        } else {
+	            charge = units * 20;
+	        }
+	        return charge + meterCharge;
+
+	}
+
+}
