@@ -1,6 +1,0 @@
-package com.techlabs.model;
-
-public enum AccountType1 {
-	Savings,Current
-
-}

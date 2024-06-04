@@ -16,4 +16,15 @@
 <fullyQualifiedTypeName name="com.techlabs.model.Account"/>
 <fullyQualifiedTypeName name="com.techlabs.model.AccountType"/>
 <fullyQualifiedTypeName name="com.techlabs.model.InputValidator"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Constructor"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Parameter"/>
+<fullyQualifiedTypeName name="org.omg.Dynamic.Parameter"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Method"/>
+<fullyQualifiedTypeName name="com.techlabs.model.StaticDemo"/>
+<fullyQualifiedTypeName name="com.techlabs.model.BoxWeight"/>
+<fullyQualifiedTypeName name="com.techlabs.model.BoxWeight1"/>
+<fullyQualifiedTypeName name="com.techlabs.model.CurrentAccount"/>
+<fullyQualifiedTypeName name="com.techlabs.model.Car"/>
+<fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+<fullyQualifiedTypeName name="com.techlabs.model.SavingsAccount"/>
 </qualifiedTypeNameHistroy>
