@@ -10,7 +10,6 @@
 <fullyQualifiedTypeName name="com.techlabs.model.Point"/>
 <fullyQualifiedTypeName name="com.techlabs.model.Student"/>
 <fullyQualifiedTypeName name="com.techlabs.model.Employee"/>
-<fullyQualifiedTypeName name="com.techlabs.model.Rectangle"/>
 <fullyQualifiedTypeName name="com.techlabs.model.Rectangle2"/>
 <fullyQualifiedTypeName name="com.techlabs.model.Complex"/>
 <fullyQualifiedTypeName name="com.techlabs.model.Account"/>
@@ -27,4 +26,23 @@
 <fullyQualifiedTypeName name="com.techlabs.model.Car"/>
 <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
 <fullyQualifiedTypeName name="com.techlabs.model.SavingsAccount"/>
+<fullyQualifiedTypeName name="com.techlabs.model.Man"/>
+<fullyQualifiedTypeName name="com.techlabs.model.Boy"/>
+<fullyQualifiedTypeName name="com.techlabs.model.Circle"/>
+<fullyQualifiedTypeName name="com.techlabs.model.Rectangle"/>
+<fullyQualifiedTypeName name="com.techlabs.model.Shape"/>
+<fullyQualifiedTypeName name="com.techlabs.model1.SuperClass"/>
+<fullyQualifiedTypeName name="com.techlabs.model.Voter"/>
+<fullyQualifiedTypeName name="com.techlabs.exception.AgeNotValid"/>
+<fullyQualifiedTypeName name="com.techlabs.exception.AgeNotValidException"/>
+<fullyQualifiedTypeName name="com.techlabs.model.BankAccount"/>
+<fullyQualifiedTypeName name="java.util.HashSet"/>
+<fullyQualifiedTypeName name="java.util.TreeSet"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.LinkedHashMap"/>
+<fullyQualifiedTypeName name="java.util.TreeMap"/>
+<fullyQualifiedTypeName name="java.util.Set"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.Map.Entry"/>
+<fullyQualifiedTypeName name="com.techlabs.model.MyThread"/>
 </qualifiedTypeNameHistroy>

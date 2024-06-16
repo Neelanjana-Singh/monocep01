@@ -8,6 +8,13 @@ public class Account {
 	    public Account() {
 	        // Default constructor
 	    }
+	    public Account(int accountnumber, String name, double balance) {
+			super();
+			this.accountnumber = accountnumber;
+			this.name = name;
+			this.balance = balance;
+		}
+
 
 	    public int getAccountNumber() {
 	        return accountnumber;
@@ -29,7 +36,8 @@ public class Account {
 	        return balance;
 	    }
 
-	    public void setBalance(double balance) {
+	   
+		public void setBalance(double balance) {
 	        this.balance = balance;
 	    }
 
