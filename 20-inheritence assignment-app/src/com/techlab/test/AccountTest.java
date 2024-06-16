@@ -59,7 +59,11 @@ public class AccountTest {
             int accountChoice = scanner.nextInt();
 
             if (accountChoice == 3) {
+<<<<<<< HEAD
             	System.out.println("Exit");
+=======
+                System.out.println("Exit");
+>>>>>>> d8beaa17bf248ec647a29d78cd83c707b183230e
                 break;
             }
 
