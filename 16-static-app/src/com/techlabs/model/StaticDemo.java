@@ -3,7 +3,7 @@ package com.techlabs.model;
 public class StaticDemo {
 	
 	private int number1;
-	//private int number2;
+	
 	private static  int number2;
 	
 	public StaticDemo()
