@@ -16,6 +16,7 @@ import com.techlabs.model.ReturnService;
 import com.techlabs.model.User;
 import com.techlabs.model.UserRegistrationService;
 
+<<<<<<< HEAD
 public class LibraryManagementSystem {
 
     private static List<User> users = new ArrayList<>();
@@ -23,6 +24,16 @@ public class LibraryManagementSystem {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+=======
+
+public class LibraryManagementSystem {
+
+	private static List<User> users = new ArrayList<>();
+    private static List<Book> books = new ArrayList<>();
+	
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+>>>>>>> 8cbd34df2c998d8a4757e67d516078a33fce72c1
 
         boolean exit = false;
         System.out.println("Welcome to Library Management System");
@@ -33,7 +44,11 @@ public class LibraryManagementSystem {
             System.out.println("3. Catalog Book");
             System.out.println("4. Borrow Book");
             System.out.println("5. Return Book");
+<<<<<<< HEAD
             System.out.println("6. Exit");
+=======
+            System.out.println("6.Exit");
+>>>>>>> 8cbd34df2c998d8a4757e67d516078a33fce72c1
             int choose = scanner.nextInt();
             switch (choose) {
                 case 1:
@@ -53,16 +68,25 @@ public class LibraryManagementSystem {
                     break;
                 case 6:
                     exit = true;
+<<<<<<< HEAD
                     System.out.println("Exiting... Thank you!");
+=======
+>>>>>>> 8cbd34df2c998d8a4757e67d516078a33fce72c1
                     break;
                 default:
                     System.out.println("Invalid option. Please try again.");
                     break;
             }
         }
+<<<<<<< HEAD
     }
 
     private static void addBook(Scanner scanner) {
+=======
+	}
+	
+	private static void addBook(Scanner scanner) {
+>>>>>>> 8cbd34df2c998d8a4757e67d516078a33fce72c1
         System.out.println("Enter Book Title");
         String title = scanner.next();
 
@@ -115,6 +139,10 @@ public class LibraryManagementSystem {
         }
     }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8cbd34df2c998d8a4757e67d516078a33fce72c1
     private static void borrowBook(Scanner scanner) {
         System.out.println("Enter User ID");
         int userId = scanner.nextInt();
@@ -167,7 +195,11 @@ public class LibraryManagementSystem {
             return;
         }
 
+<<<<<<< HEAD
         IReturn returnService = new ReturnService();
+=======
+        IReturn returnService = new  ReturnService();
+>>>>>>> 8cbd34df2c998d8a4757e67d516078a33fce72c1
         returnService.returnBook(user, book);
     }
 
@@ -188,4 +220,9 @@ public class LibraryManagementSystem {
         }
         return null;
     }
+<<<<<<< HEAD
 }
+=======
+
+}
+>>>>>>> 8cbd34df2c998d8a4757e67d516078a33fce72c1
