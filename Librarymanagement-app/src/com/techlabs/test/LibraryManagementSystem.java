@@ -16,14 +16,13 @@ import com.techlabs.model.ReturnService;
 import com.techlabs.model.User;
 import com.techlabs.model.UserRegistrationService;
 
-
 public class LibraryManagementSystem {
 
-	private static List<User> users = new ArrayList<>();
+    private static List<User> users = new ArrayList<>();
     private static List<Book> books = new ArrayList<>();
-	
-	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
         boolean exit = false;
         System.out.println("Welcome to Library Management System");
@@ -34,7 +33,7 @@ public class LibraryManagementSystem {
             System.out.println("3. Catalog Book");
             System.out.println("4. Borrow Book");
             System.out.println("5. Return Book");
-            System.out.println("6.Exit");
+            System.out.println("6. Exit");
             int choose = scanner.nextInt();
             switch (choose) {
                 case 1:
@@ -54,15 +53,16 @@ public class LibraryManagementSystem {
                     break;
                 case 6:
                     exit = true;
+                    System.out.println("Exiting... Thank you!");
                     break;
                 default:
                     System.out.println("Invalid option. Please try again.");
                     break;
             }
         }
-	}
-	
-	private static void addBook(Scanner scanner) {
+    }
+
+    private static void addBook(Scanner scanner) {
         System.out.println("Enter Book Title");
         String title = scanner.next();
 
@@ -114,7 +114,6 @@ public class LibraryManagementSystem {
             System.out.println("Book not found.");
         }
     }
-
 
     private static void borrowBook(Scanner scanner) {
         System.out.println("Enter User ID");
@@ -168,7 +167,7 @@ public class LibraryManagementSystem {
             return;
         }
 
-        IReturn returnService = new  ReturnService();
+        IReturn returnService = new ReturnService();
         returnService.returnBook(user, book);
     }
 
@@ -189,5 +188,4 @@ public class LibraryManagementSystem {
         }
         return null;
     }
-
 }
