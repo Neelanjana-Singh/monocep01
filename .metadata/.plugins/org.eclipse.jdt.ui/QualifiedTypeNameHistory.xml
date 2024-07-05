@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.techlabs.singelton.model.DatabaseManager"/>
-<fullyQualifiedTypeName name="com.techlabs.factory.model.ICar"/>
-<fullyQualifiedTypeName name="com.techlabs.factory.model.Maruti"/>
-<fullyQualifiedTypeName name="com.techlabs.factory.model.Tata"/>
-<fullyQualifiedTypeName name="com.techlabs.factory.model.Mahindra"/>
-<fullyQualifiedTypeName name="com.techlabs.factory.model.CarFactory"/>
-<fullyQualifiedTypeName name="com.techlabs.factory.model.IAccount"/>
-<fullyQualifiedTypeName name="com.techlabs.factory.model.AccountFactory"/>
-<fullyQualifiedTypeName name="com.techlabs.factory.model.SavingsAccount"/>
-<fullyQualifiedTypeName name="com.techlabs.factory.model.CurrentAccount"/>
-<fullyQualifiedTypeName name="com.techlabs.builderPattern.model.PhoneBuilder"/>
 <fullyQualifiedTypeName name="com.techlabs.builderPattern.model.Phone"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
@@ -52,12 +41,23 @@
 <fullyQualifiedTypeName name="com.techlabs.decoratorPattern.model.PremiumHat"/>
 <fullyQualifiedTypeName name="com.techlabs.decoratorPattern.model.GoldenHat"/>
 <fullyQualifiedTypeName name="com.techlabs.decoratorPattern.model.RibonedHat"/>
-<fullyQualifiedTypeName name="java.awt.List"/>
 <fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="com.techlabs.observerPattern.model.Account"/>
 <fullyQualifiedTypeName name="com.techlabs.observerPattern.model.EmailNotifier"/>
 <fullyQualifiedTypeName name="com.techlabs.observerPattern.model.SmsNotifier"/>
 <fullyQualifiedTypeName name="com.techlabs.strategyPattern.model.MultiplyOperation"/>
 <fullyQualifiedTypeName name="com.techlabs.strategyPattern.model.AddOperation"/>
+<fullyQualifiedTypeName name="com.techlabs.compositePattern.model.Developer"/>
+<fullyQualifiedTypeName name="com.techlabs.compositePattern.model.Manager"/>
+<fullyQualifiedTypeName name="com.techlabs.compositePattern.model.EmployeeDirectory"/>
+<fullyQualifiedTypeName name="com.techlabs.commandPattern.model.Television"/>
+<fullyQualifiedTypeName name="com.techlabs.commandPattern.model.ICommand"/>
+<fullyQualifiedTypeName name="com.techlabs.commandPattern.model.RemoteControl"/>
+<fullyQualifiedTypeName name="com.techlabs.commandPattern.model.OnCommand"/>
+<fullyQualifiedTypeName name="com.techlabs.commandPattern.model.OffCommand"/>
+<fullyQualifiedTypeName name="com.techlabs.statedesignPattern.model.MediaPlayer"/>
+<fullyQualifiedTypeName name="com.techlabs.mementoPattern.model.TextEditor"/>
+<fullyQualifiedTypeName name="com.techlabs.mementoPattern.model.CareTaker"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>

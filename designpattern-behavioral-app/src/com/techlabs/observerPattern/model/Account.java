@@ -42,20 +42,39 @@ public class Account {
     
     @Override
     public String toString() {
-        return "Account [accountNumber=" + accountNumber + ", accountName=" + accountName + ", balance=" + balance
-                + "]";
+        return "Account [accountNumber=" + accountNumber + ", accountName=" + accountName + ", balance=" + balance + "]";
     }
 
-    public void registerNotifier(INotifier notifier) {
-        // Check if a notifier of the same type already exists
+    public void registerNotifier(INotifier notifier) throws DuplicateNotifierException {
         for (INotifier existingNotifier : notifiers) {
             if (existingNotifier.getClass().equals(notifier.getClass())) {
-                return; // Already registered, so return without adding
+                throw new DuplicateNotifierException("Notifier already registered.");
             }
         }
         notifiers.add(notifier);
     }
     
+    public void removeNotifier(INotifier notifier) throws DuplicateNotifierException {
+        boolean canRemove = false;
+        for (INotifier existingNotifier : notifiers) {
+            if (existingNotifier.getClass().equals(notifier.getClass())) {
+                canRemove = true;
+                notifiers.remove(notifier);
+                break;
+            }
+        }
+        if (!canRemove) {
+            throw new DuplicateNotifierException("Notifier does not exist.");
+        }
+    }
+    
+    public void deposit(double amount) {
+        balance += amount;
+        for (INotifier notifier : notifiers) {
+            notifier.notifyUser(this, amount, "deposit");
+        }
+    }
+
     public void withdraw(double amount) {
         if (balance > amount) {
             balance -= amount;
